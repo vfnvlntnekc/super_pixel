@@ -34,12 +34,12 @@ int main() {
         }
 
         // Допустимое значение отклонения яркости
-        int eps = 20;
+        int delta = 20;
 
         // Изменение значений яркости пикселей по eps
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
-                bright_new[i][j] = eps * round(bright[i][j] / eps);
+                bright_new[i][j] = delta * round(bright[i][j] / delta);
             }
         }
 
