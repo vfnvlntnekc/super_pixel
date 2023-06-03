@@ -57,7 +57,7 @@ vector<vector<int>> divi_into_SP(int** bright, int height, int width) {
 
 // Сохранениу сегментов в файл
 void file_SPs(const vector<vector<int>>& all_SP) {
-    std::ofstream file("one_SP.txt");
+    std::ofstream file("all_SP.txt");
 
     if (!file.is_open()) {
         cout << "Ошибка при открытии файла." << endl;
